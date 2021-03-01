@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         doStuff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Please allow 20-30 seconds for download", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Please wait ~20 seconds for download", Toast.LENGTH_LONG).show();
                 dbCollege.getTotalPages(requestQueue, context);
             }
         });
