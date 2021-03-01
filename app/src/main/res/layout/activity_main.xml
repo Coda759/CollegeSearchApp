@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icon"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College Search App"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+<!--        android:visibility="gone" to below layout-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/login"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Login:"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-medium"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@drawable/et_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/et_bg"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login"
+                android:text="Login"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_load_colleges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login"
+                android:text="Load Colleges"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/login_bottom_nav"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btn_go_to_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="Signup Now"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="Read All Users"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

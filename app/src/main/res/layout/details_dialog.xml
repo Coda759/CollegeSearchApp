@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College Name Here"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/details_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College ID"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/details_cost_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost in-state:"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/details_cost_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost out-of-state:"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/details_chance_sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My chances (SAT): good"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/details_chance_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My chances (ACT): good"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/details_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: CityName+State+Zip"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/btn_bg"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
